@@ -1,0 +1,1028 @@
+================================================================================
+                    ASSEL.AI - AGENCIA DE AUTOMATIZACIONES
+                    WEB COMPLETA - ESPECIFICACIÓN DE DISEÑO
+================================================================================
+
+CREADOR: Alan Assel
+CONCEPTO: Agencia de automatizaciones con asistentes virtuales IA para negocios
+SERVICIOS: Chatbots para Restaurantes, Inmobiliarias, Clínicas, E-commerce
+
+================================================================================
+                              IDENTIDAD DE MARCA
+================================================================================
+
+NOMBRE: ASSEL.AI
+TAGLINE PRINCIPAL: "Automatizamos tu negocio mientras tú te enfocas en crecer"
+TAGLINE SECUNDARIO: "Asistentes virtuales con IA que trabajan 24/7"
+
+PERSONALIDAD DE MARCA:
+- Futurista pero accesible
+- Profesional pero humano
+- Tecnológico pero simple de entender
+- Innovador pero confiable
+- Premium pero no inalcanzable
+
+================================================================================
+                              PALETA DE COLORES
+================================================================================
+
+COLORES PRINCIPALES:
+- Negro Carbón (Fondo principal): #0A0A0F
+- Negro Medio (Cards/Secciones): #12121A
+- Blanco Puro (Texto principal): #FFFFFF
+- Gris Platino (Texto secundario): #A0A0B0
+
+ACENTOS NEÓN (Para CTAs y highlights):
+- Cyan Eléctrico (Principal): #00F5FF
+- Azul Profundo: #0066FF
+- Violeta Neón: #8B5CF6
+
+GRADIENTES:
+- Hero Gradient: linear-gradient(135deg, #0066FF 0%, #00F5FF 50%, #8B5CF6 100%)
+- Card Glow: radial-gradient(circle at center, rgba(0,245,255,0.1) 0%, transparent 70%)
+- Text Gradient: linear-gradient(90deg, #00F5FF, #8B5CF6)
+
+================================================================================
+                              TIPOGRAFÍA
+================================================================================
+
+FUENTE DISPLAY (Títulos):
+- Primaria: "Space Grotesk" o "Outfit" - Bold/Black
+- Alternativa: "Syne" para headlines de impacto
+
+FUENTE BODY (Textos):
+- Primaria: "Inter" o "Plus Jakarta Sans" - Regular/Medium
+- Para énfasis: Semibold
+
+TAMAÑOS:
+- Hero H1: 72px desktop / 40px mobile
+- H2 Secciones: 48px desktop / 32px mobile
+- H3 Subtítulos: 32px desktop / 24px mobile
+- Body: 18px desktop / 16px mobile
+- Captions: 14px
+
+================================================================================
+                              NAVEGACIÓN PRINCIPAL
+================================================================================
+
+HEADER (Sticky, blur backdrop):
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  [Logo: ASSEL.AI]    Servicios    Demos    Precios    Casos    Blog   [CTA] │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+LOGO:
+- Texto "ASSEL" en bold + ".AI" con color cyan eléctrico
+- Animación sutil de parpadeo en el punto del .AI
+
+MENÚ ITEMS:
+1. Servicios (dropdown con los 4 verticales)
+2. Demos (link a sección interactiva)
+3. Precios
+4. Casos de Éxito
+5. Blog
+6. CTA Principal: "Agendar Demo" (botón cyan con glow)
+
+EFECTO HEADER:
+- Background transparente en scroll top
+- Fondo con blur glass-morphism al hacer scroll
+- Border bottom sutil cyan al activarse
+
+================================================================================
+                         PÁGINA 1: HOME (LANDING PRINCIPAL)
+================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 1: HERO
+(Full viewport height, video de fondo con overlay oscuro)
+
+FONDO:
+- Video loop abstracto de partículas/ondas digitales en movimiento
+- Overlay gradient negro 70% para legibilidad
+- Efecto de grid lines sutiles que se mueven
+
+CONTENIDO HERO:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│                    Badge animado: "🚀 +500 negocios automatizados"         │
+│                                                                            │
+│           ░█▀▀█ ░█  ░█ ▀▀█▀▀ ░█▀▀▀█ ░█▀▄▀█ ░█▀▀█ ▀▀█▀▀ ▀█▀ ░█▀▀▀█        │
+│                                                                            │
+│                    AUTOMATIZA TU NEGOCIO                                   │
+│                    CON INTELIGENCIA ARTIFICIAL                             │
+│                                                                            │
+│        Asistentes virtuales que atienden, reservan, venden y               │
+│        fidelizan clientes mientras vos dormís.                             │
+│                                                                            │
+│        [████ Agendar Demo Gratis ████]    [▷ Ver Cómo Funciona]            │
+│                                                                            │
+│        ✓ Sin código  ✓ Implementación en 48hs  ✓ Soporte 24/7              │
+│                                                                            │
+│                    ↓ Scroll para descubrir más                             │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+ANIMACIONES HERO:
+- Título aparece con typewriter effect
+- Subtítulo fade-in con delay 0.5s
+- CTAs slide-up con delay 1s
+- Badge flotante con animación bounce
+- Partículas de fondo en loop
+- Cursor personalizado con trail cyan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 2: BARRA DE LOGOS (Trust bar)
+(Scroll horizontal infinito)
+
+TÍTULO: "Empresas que ya automatizan con nosotros"
+
+LOGOS PLACEHOLDER:
+[Logo 1] [Logo 2] [Logo 3] [Logo 4] [Logo 5] [Logo 6] [Logo 7] [Logo 8]
+
+ESTILO:
+- Logos en blanco/gris con opacidad 60%
+- Hover: opacidad 100% + glow cyan sutil
+- Scroll automático tipo marquee
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 3: EL PROBLEMA / LA SOLUCIÓN
+(Split screen con contraste visual)
+
+LAYOUT: Dos columnas con diagonal divisor
+
+COLUMNA IZQUIERDA (Fondo rojo oscuro sutil):
+┌─────────────────────────────────────┐
+│  😩 EL PROBLEMA                     │
+│                                     │
+│  • Perdés clientes por no          │
+│    responder a tiempo               │
+│                                     │
+│  • Tu equipo está saturado         │
+│    con tareas repetitivas           │
+│                                     │
+│  • Las reservas se pierden         │
+│    fuera del horario laboral        │
+│                                     │
+│  • Los leads se enfrían mientras   │
+│    esperan respuesta                │
+│                                     │
+│  ❌ El 67% de los clientes no      │
+│     vuelven a contactar si         │
+│     no reciben respuesta en 5 min   │
+└─────────────────────────────────────┘
+
+COLUMNA DERECHA (Fondo cyan con glow):
+┌─────────────────────────────────────┐
+│  🎯 LA SOLUCIÓN                     │
+│                                     │
+│  Un asistente IA que trabaja        │
+│  24/7 atendiendo, vendiendo         │
+│  y gestionando por vos              │
+│                                     │
+│  ✓ Respuesta instantánea            │
+│  ✓ Nunca se cansa                   │
+│  ✓ Personalizado a tu negocio       │
+│  ✓ Se integra con WhatsApp          │
+│  ✓ Dashboard en tiempo real         │
+│                                     │
+│  📈 +340% en conversión de leads    │
+│     con nuestros clientes           │
+│                                     │
+│  [Quiero mi asistente →]            │
+└─────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 4: SERVICIOS / VERTICALES
+(Grid de cards con hover interactivo)
+
+TÍTULO: "Soluciones diseñadas para tu industria"
+SUBTÍTULO: "Cada asistente está entrenado específicamente para tu tipo de negocio"
+
+GRID 2x2:
+┌─────────────────────────────────────┬─────────────────────────────────────┐
+│  🍽️ RESTAURANTES                    │  🏠 INMOBILIARIAS                   │
+│                                     │                                     │
+│  Bot que toma reservas,             │  Bot que califica leads,           │
+│  muestra el menú, gestiona          │  agenda visitas, responde          │
+│  horarios y fideliza clientes       │  consultas 24/7 sobre propiedades  │
+│                                     │                                     │
+│  ✓ Reservas automáticas             │  ✓ Filtrado inteligente de leads   │
+│  ✓ Integración con WhatsApp         │  ✓ Agenda de visitas automática    │
+│  ✓ Dashboard de ocupación           │  ✓ CRM integrado                   │
+│  ✓ Recordatorios automáticos        │  ✓ Seguimiento automatizado        │
+│                                     │                                     │
+│  [Ver Demo →]                       │  [Ver Demo →]                       │
+├─────────────────────────────────────┼─────────────────────────────────────┤
+│  🏥 CLÍNICAS Y CONSULTORIOS         │  🛒 E-COMMERCE                      │
+│                                     │                                     │
+│  Bot que agenda turnos,             │  Bot que asesora en compras,       │
+│  envía recordatorios, gestiona      │  resuelve dudas, gestiona          │
+│  cancelaciones y consultas          │  pedidos y reduce abandonos        │
+│                                     │                                     │
+│  ✓ Gestión de turnos 24/7           │  ✓ Recuperación de carritos        │
+│  ✓ Recordatorios por WhatsApp       │  ✓ Recomendaciones personalizadas  │
+│  ✓ Historial de pacientes           │  ✓ Seguimiento de pedidos          │
+│  ✓ Múltiples especialidades         │  ✓ Integración con tu tienda       │
+│                                     │                                     │
+│  [Ver Demo →]                       │  [Ver Demo →]                       │
+└─────────────────────────────────────┴─────────────────────────────────────┘
+
+EFECTOS CARDS:
+- Border gradient cyan on hover
+- Icono animado (bounce)
+- Elevación con sombra
+- Reveal de bullets con stagger animation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 5: DEMO INTERACTIVA EN VIVO
+(Sección estrella - Chat funcional embebido)
+
+FONDO: Grid pattern con glow central
+
+TÍTULO: "Probá ahora mismo cómo funciona"
+SUBTÍTULO: "Hablá con uno de nuestros asistentes en tiempo real"
+
+LAYOUT:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│    [Tab: Restaurante] [Tab: Inmobiliaria] [Tab: Clínica] [Tab: E-commerce] │
+│                                                                            │
+│    ┌──────────────────────────────────────────────────────────────────┐    │
+│    │  ╔═══════════════════════════════════════════════════════════╗  │    │
+│    │  ║   🤖 Asistente de La Buena Mesa                           ║  │    │
+│    │  ║   ● En línea                                              ║  │    │
+│    │  ╠═══════════════════════════════════════════════════════════╣  │    │
+│    │  ║                                                           ║  │    │
+│    │  ║  🤖: ¡Hola! Soy el asistente virtual de La Buena Mesa.   ║  │    │
+│    │  ║      ¿En qué puedo ayudarte hoy?                         ║  │    │
+│    │  ║                                                           ║  │    │
+│    │  ║      [Ver menú] [Hacer reserva] [Horarios]               ║  │    │
+│    │  ║                                                           ║  │    │
+│    │  ║                                    👤: Quiero reservar   ║  │    │
+│    │  ║                                        para 4 personas    ║  │    │
+│    │  ║                                                           ║  │    │
+│    │  ║  🤖: ¡Perfecto! Para cuántas personas sería la reserva   ║  │    │
+│    │  ║      y qué día preferís?                                 ║  │    │
+│    │  ║                                                           ║  │    │
+│    │  ╠═══════════════════════════════════════════════════════════╣  │    │
+│    │  ║  [Escribí tu mensaje...]                        [Enviar] ║  │    │
+│    │  ╚═══════════════════════════════════════════════════════════╝  │    │
+│    └──────────────────────────────────────────────────────────────────┘    │
+│                                                                            │
+│    SUGERENCIAS RÁPIDAS:                                                    │
+│    [Quiero ver el menú] [¿Tienen vegano?] [Reserva para mañana]            │
+│                                                                            │
+│    ────────────────────────────────────────────────────────────────        │
+│    💡 Este chat está conectado a una IA real. Las respuestas son           │
+│       generadas en tiempo real según el contexto de cada negocio.          │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+FUNCIONALIDAD:
+- Tabs para cambiar entre verticales
+- Chat funcional conectado al webhook de N8N
+- Sugerencias clickeables
+- Animación de "escribiendo..."
+- Diseño tipo iPhone/WhatsApp
+- Mock de notificación push al recibir respuesta
+
+CTA DEBAJO DEL DEMO:
+"¿Te imaginás esto atendiendo tu negocio 24/7?"
+[Quiero el mío → Agendar llamada]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 6: CÓMO FUNCIONA (Timeline/Steps)
+(3 pasos visuales con iconos animados)
+
+TÍTULO: "De cero a automatizado en 3 simples pasos"
+
+TIMELINE HORIZONTAL:
+┌───────────────────────────────────────────────────────────────────────────┐
+│                                                                           │
+│    [1]──────────────────[2]──────────────────[3]                          │
+│     │                    │                    │                           │
+│     ▼                    ▼                    ▼                           │
+│                                                                           │
+│  📞 CONSULTÁ            ⚙️ CONFIGURAMOS       🚀 ACTIVAMOS                │
+│                                                                           │
+│  Agendá una llamada     Personalizamos el     Conectamos el bot          │
+│  de 15 min gratis       bot a tu negocio,     a tu WhatsApp y            │
+│  donde analizamos       entrenamos la IA      comenzás a recibir         │
+│  tus necesidades        y configuramos        clientes atendidos         │
+│                         tu dashboard          automáticamente            │
+│                                                                           │
+│  ⏱️ 15 min              ⏱️ 24-48 hs           ⏱️ Inmediato               │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+ANIMACIÓN:
+- Timeline progress bar que se llena al hacer scroll
+- Iconos que se iluminan al pasar el scroll
+- Numbers con counter animation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 7: ESTADÍSTICAS / SOCIAL PROOF
+(Números grandes con counter animation)
+
+FONDO: Gradient mesh sutil
+
+STATS GRID:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│     +500                 +50,000              97%               24/7       │
+│   Negocios              Clientes           Satisfacción       Disponible  │
+│  automatizados          atendidos           de clientes        siempre    │
+│                                                                            │
+│   En Argentina          Mensualmente        Con nuestros       Tu bot     │
+│   y LATAM               por nuestros        asistentes         nunca      │
+│                         bots                                   descansa   │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+EFECTO:
+- Counter que sube desde 0 al hacer scroll
+- Glow pulse en los números
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 8: TESTIMONIOS
+(Carousel con cards de testimonios)
+
+TÍTULO: "Lo que dicen nuestros clientes"
+
+CAROUSEL CARDS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐             │
+│  │  ⭐⭐⭐⭐⭐        │  │  ⭐⭐⭐⭐⭐        │  │  ⭐⭐⭐⭐⭐        │             │
+│  │                 │  │                 │  │                 │             │
+│  │  "Pasamos de    │  │  "Antes tardaba │  │  "El ROI fue    │             │
+│  │   perder 30%    │  │   2hs diarias   │  │   inmediato.    │             │
+│  │   de reservas   │  │   en responder  │  │   Se pagó solo  │             │
+│  │   a tener 98%   │  │   consultas.    │  │   en el primer  │             │
+│  │   de ocupación" │  │   Ahora el bot  │  │   mes"          │             │
+│  │                 │  │   lo hace todo" │  │                 │             │
+│  │  ────────────── │  │  ────────────── │  │  ────────────── │             │
+│  │  👤 María G.    │  │  👤 Roberto S.  │  │  👤 Laura P.    │             │
+│  │  La Parrilla    │  │  Inmobiliaria   │  │  Clínica Dental │             │
+│  │  del Puerto     │  │  Centro         │  │  Sonrisas       │             │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘             │
+│                                                                             │
+│                        [●] [○] [○]                                          │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+EFECTO:
+- Auto-play carousel
+- Drag/swipe para navegar
+- Parallax sutil en las cards
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 9: FAQ (Acordeón)
+(Preguntas frecuentes expandibles)
+
+TÍTULO: "Preguntas Frecuentes"
+
+ACORDEÓN:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  [+] ¿Cómo funciona la integración con WhatsApp?                           │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [-] ¿Necesito conocimientos técnicos?                                     │
+│      No, nosotros nos encargamos de toda la implementación técnica.        │
+│      Vos solo necesitás contarnos sobre tu negocio y en 48hs tenés         │
+│      tu asistente funcionando.                                             │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [+] ¿Qué pasa si el bot no sabe responder algo?                           │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [+] ¿Puedo personalizar las respuestas del bot?                           │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [+] ¿Tienen período de prueba?                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [+] ¿El bot puede procesar pagos?                                         │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  [+] ¿Cómo es el soporte técnico?                                          │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+EFECTO:
+- Expand/collapse suave
+- Icono que rota
+- Highlight del item activo
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECCIÓN 10: CTA FINAL
+(Full width, máximo impacto visual)
+
+FONDO: Gradient animado cyan → violeta con partículas
+
+CONTENIDO:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│                    🚀                                                       │
+│                                                                            │
+│           ¿LISTO PARA AUTOMATIZAR TU NEGOCIO?                              │
+│                                                                            │
+│           Agendá una demo gratuita de 15 minutos                           │
+│           y descubrí cómo multiplicar tus resultados                       │
+│                                                                            │
+│           [████████ AGENDAR DEMO GRATIS ████████]                          │
+│                                                                            │
+│           ✓ Sin compromiso   ✓ 100% personalizado   ✓ Respuesta en 24hs   │
+│                                                                            │
+│           ¿Preferís escribirnos?                                           │
+│           📱 WhatsApp: +54 9 XXX XXX XXXX                                   │
+│           📧 Email: hola@assel.ai                                          │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+EFECTO:
+- Gradient que se mueve lentamente
+- Partículas flotando
+- Botón con glow pulsante
+- Hover: escala y brillo aumentado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FOOTER
+(Minimalista con links y social)
+
+LAYOUT:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ASSEL.AI                                                                  │
+│  Automatizaciones inteligentes                                             │
+│  para negocios que quieren crecer                                          │
+│                                                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│                                                                            │
+│  SERVICIOS          EMPRESA           LEGAL              CONTACTO          │
+│  • Restaurantes     • Sobre Nosotros  • Privacidad       📍 Buenos Aires   │
+│  • Inmobiliarias    • Blog            • Términos         📱 +54 9 XXX      │
+│  • Clínicas         • Casos de Éxito  • Cookies          📧 hola@assel.ai  │
+│  • E-commerce       • Carreras                                             │
+│                                                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│                                                                            │
+│  [LinkedIn] [Instagram] [Twitter] [YouTube]                                │
+│                                                                            │
+│  © 2024 ASSEL.AI - Todos los derechos reservados                           │
+│  Hecho con 💙 en Argentina                                                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+                         PÁGINA 2: SERVICIOS (Detalle)
+================================================================================
+
+URL: /servicios
+
+ESTRUCTURA:
+- Hero pequeño con título "Nuestros Servicios"
+- 4 secciones detalladas (una por vertical)
+- Cada sección incluye:
+  • Descripción completa
+  • Lista de funcionalidades
+  • Screenshot/mockup del dashboard
+  • Video demo
+  • CTA específico
+  • Pricing preview
+
+SECCIÓN POR VERTICAL (Ejemplo Restaurantes):
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  🍽️ ASISTENTE PARA RESTAURANTES                                           │
+│                                                                            │
+│  Tu maitre virtual que nunca descansa                                      │
+│                                                                            │
+│  [COLUMNA IZQUIERDA]              [COLUMNA DERECHA]                        │
+│  ──────────────────               ──────────────────                       │
+│  Imaginate tener a alguien       [Mockup iPhone con chat]                 │
+│  atendiendo tu restaurante        Mostrando conversación                  │
+│  24/7, tomando reservas,          real del bot tomando                    │
+│  mostrando el menú y              una reserva                             │
+│  respondiendo consultas...                                                │
+│                                                                            │
+│  FUNCIONALIDADES:                                                          │
+│  ├─ ✓ Toma de reservas automática                                         │
+│  ├─ ✓ Visualización de menú interactivo                                   │
+│  ├─ ✓ Gestión de horarios y disponibilidad                                │
+│  ├─ ✓ Confirmación por WhatsApp                                           │
+│  ├─ ✓ Recordatorios automáticos                                           │
+│  ├─ ✓ Dashboard de ocupación en tiempo real                               │
+│  ├─ ✓ Historial de clientes                                               │
+│  └─ ✓ Reportes y analytics                                                │
+│                                                                            │
+│  [Ver Demo en Vivo]    [Solicitar Cotización]                             │
+│                                                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│  Desde $XX.XXX/mes    •    Implementación en 48hs    •    Soporte 24/7    │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+REPETIR ESTRUCTURA SIMILAR PARA:
+- 🏠 Inmobiliarias
+- 🏥 Clínicas y Consultorios
+- 🛒 E-commerce
+
+
+================================================================================
+                            PÁGINA 3: PRECIOS
+================================================================================
+
+URL: /precios
+
+HERO:
+TÍTULO: "Planes simples y transparentes"
+SUBTÍTULO: "Sin letra chica. Sin sorpresas. Pagás por lo que usás."
+
+TOGGLE: [Mensual] [Anual -20%]
+
+PRICING CARDS (3 columnas):
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ┌─────────────┐    ┌─────────────────┐    ┌─────────────┐                 │
+│  │   STARTER   │    │   ⭐ PRO        │    │  ENTERPRISE │                 │
+│  │             │    │   MÁS POPULAR   │    │             │                 │
+│  │  $XX.XXX    │    │   $XX.XXX       │    │  Cotización │                 │
+│  │   /mes      │    │    /mes         │    │  Personaliz │                 │
+│  │             │    │                 │    │             │                 │
+│  │ Ideal para  │    │ Para negocios   │    │ Soluciones  │                 │
+│  │ empezar     │    │ en crecimiento  │    │ a medida    │                 │
+│  │             │    │                 │    │             │                 │
+│  │ ✓ 1 bot     │    │ ✓ 3 bots        │    │ ✓ Ilimitado │                 │
+│  │ ✓ 500 msg   │    │ ✓ 2000 msg      │    │ ✓ Ilimitado │                 │
+│  │ ✓ Dashboard │    │ ✓ Dashboard Pro │    │ ✓ Dedicado  │                 │
+│  │ ✓ Soporte   │    │ ✓ Prioridad     │    │ ✓ 24/7 VIP  │                 │
+│  │   email     │    │ ✓ Analytics     │    │ ✓ Custom    │                 │
+│  │             │    │ ✓ Integraciones │    │ ✓ SLA       │                 │
+│  │             │    │                 │    │             │                 │
+│  │ [Empezar]   │    │ [████ ELEGIR]   │    │ [Contactar] │                 │
+│  │             │    │                 │    │             │                 │
+│  └─────────────┘    └─────────────────┘    └─────────────┘                 │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+CARD PRO:
+- Border cyan glow
+- Badge "Más Popular"
+- Botón más prominente
+
+DEBAJO DE CARDS:
+- Comparativa de features en tabla
+- FAQ específico de pricing
+- CTA: "¿Necesitás algo específico? Hablemos"
+
+
+================================================================================
+                       PÁGINA 4: CASOS DE ÉXITO
+================================================================================
+
+URL: /casos
+
+HERO:
+TÍTULO: "Resultados reales de negocios reales"
+SUBTÍTULO: "Conocé las historias de éxito de quienes ya automatizan con nosotros"
+
+FILTROS: [Todos] [Restaurantes] [Inmobiliarias] [Clínicas] [E-commerce]
+
+GRID DE CASOS:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ┌──────────────────────────────┐  ┌──────────────────────────────┐        │
+│  │  [Imagen del negocio]        │  │  [Imagen del negocio]        │        │
+│  │                              │  │                              │        │
+│  │  🍽️ LA PARRILLA DEL PUERTO  │  │  🏠 INMOBILIARIA CENTRO      │        │
+│  │                              │  │                              │        │
+│  │  +340% en reservas           │  │  +200% leads calificados     │        │
+│  │  -80% tiempo en atención     │  │  -70% tiempo de respuesta    │        │
+│  │                              │  │                              │        │
+│  │  "Pasamos de perder clientes │  │  "El bot filtra y califica   │        │
+│  │   a tener lista de espera"   │  │   mejor que cualquier SDR"   │        │
+│  │                              │  │                              │        │
+│  │  [Leer caso completo →]      │  │  [Leer caso completo →]      │        │
+│  └──────────────────────────────┘  └──────────────────────────────┘        │
+│                                                                            │
+│  ┌──────────────────────────────┐  ┌──────────────────────────────┐        │
+│  │  [Imagen del negocio]        │  │  [Imagen del negocio]        │        │
+│  │                              │  │                              │        │
+│  │  🏥 CLÍNICA DENTAL SONRISAS  │  │  🛒 TECHSTORE ONLINE         │        │
+│  │                              │  │                              │        │
+│  │  +150% turnos agendados      │  │  +45% conversión             │        │
+│  │  -90% no-shows               │  │  -60% abandono carrito       │        │
+│  │                              │  │                              │        │
+│  │  "Los recordatorios          │  │  "El bot resuelve el 80%     │        │
+│  │   automáticos lo cambiaron   │  │   de consultas pre-venta"    │        │
+│  │   todo"                      │  │                              │        │
+│  │  [Leer caso completo →]      │  │  [Leer caso completo →]      │        │
+│  └──────────────────────────────┘  └──────────────────────────────┘        │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+PÁGINA INDIVIDUAL DE CASO:
+- Header con logo y datos del cliente
+- El desafío (antes)
+- La solución (implementación)
+- Los resultados (métricas)
+- Testimonio en video
+- Screenshots del dashboard
+- CTA: "¿Querés resultados similares?"
+
+
+================================================================================
+                            PÁGINA 5: BLOG
+================================================================================
+
+URL: /blog
+
+CATEGORÍAS:
+[Todos] [Automatización] [IA] [Casos de Uso] [Tutoriales] [Noticias]
+
+FEATURED POST (Grande):
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  [IMAGEN DESTACADA GRANDE]                                                 │
+│                                                                            │
+│  AUTOMATIZACIÓN • 5 min lectura                                            │
+│                                                                            │
+│  Cómo la IA está revolucionando la atención                                │
+│  al cliente en restaurantes argentinos                                     │
+│                                                                            │
+│  Descubrí por qué cada vez más restaurantes están adoptando                │
+│  asistentes virtuales para mejorar su servicio...                          │
+│                                                                            │
+│  [Leer artículo →]                                                         │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+GRID DE POSTS:
+(3 columnas con cards de artículos)
+
+POST INDIVIDUAL:
+- Hero con imagen
+- Breadcrumb
+- Título y metadata
+- Contenido con índice lateral
+- Share buttons
+- Posts relacionados
+- CTA newsletter
+
+
+================================================================================
+                       PÁGINA 6: SOBRE NOSOTROS
+================================================================================
+
+URL: /sobre-nosotros
+
+SECCIONES:
+
+1. HERO:
+"Somos ASSEL.AI"
+"Ayudamos a negocios a escalar con inteligencia artificial"
+
+2. NUESTRA HISTORIA:
+Texto narrativo sobre Alan Assel, la visión, el origen.
+
+3. MISIÓN Y VISIÓN:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  MISIÓN                              VISIÓN                                │
+│  ──────                              ──────                                │
+│  Democratizar el acceso a            Ser la agencia de                     │
+│  la automatización e IA              automatización líder                  │
+│  para negocios de todos              en Latinoamérica, haciendo           │
+│  los tamaños                         que cada negocio tenga                │
+│                                      su asistente virtual                  │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+4. EQUIPO (opcional, puede ser solo Alan):
+┌──────────────────────────────────────┐
+│                                      │
+│        [Foto profesional]            │
+│                                      │
+│        ALAN ASSEL                    │
+│        Founder & CEO                 │
+│                                      │
+│  Desarrollador y arquitecto de       │
+│  software especializado en           │
+│  automatizaciones con IA.            │
+│                                      │
+│  [LinkedIn] [GitHub] [Twitter]       │
+│                                      │
+└──────────────────────────────────────┘
+
+5. VALORES:
+- Innovación constante
+- Transparencia
+- Resultados medibles
+- Soporte humano
+- Calidad premium
+
+6. CTA:
+"¿Querés formar parte de esta revolución?"
+[Trabajá con nosotros] [Contactanos]
+
+
+================================================================================
+                          PÁGINA 7: CONTACTO
+================================================================================
+
+URL: /contacto
+
+LAYOUT: Split screen
+
+COLUMNA IZQUIERDA:
+┌────────────────────────────────────────┐
+│                                        │
+│  HABLEMOS                              │
+│                                        │
+│  ¿Tenés un proyecto en mente?          │
+│  ¿Querés saber más sobre nuestros      │
+│  servicios? Escribinos y te            │
+│  respondemos en menos de 24hs.         │
+│                                        │
+│  ────────────────────────────────────  │
+│                                        │
+│  📍 UBICACIÓN                          │
+│     Buenos Aires, Argentina            │
+│                                        │
+│  📧 EMAIL                              │
+│     hola@assel.ai                      │
+│                                        │
+│  📱 WHATSAPP                           │
+│     +54 9 XXX XXX XXXX                 │
+│                                        │
+│  🕐 HORARIO DE ATENCIÓN                │
+│     Lun-Vie: 9:00 - 18:00              │
+│     (Respondemos en 24hs)              │
+│                                        │
+│  ────────────────────────────────────  │
+│                                        │
+│  SEGUINOS                              │
+│  [LinkedIn] [Instagram] [Twitter]      │
+│                                        │
+└────────────────────────────────────────┘
+
+COLUMNA DERECHA:
+┌────────────────────────────────────────┐
+│                                        │
+│  [FORMULARIO DE CONTACTO]              │
+│                                        │
+│  Nombre *                              │
+│  ┌──────────────────────────────────┐  │
+│  │                                  │  │
+│  └──────────────────────────────────┘  │
+│                                        │
+│  Email *                               │
+│  ┌──────────────────────────────────┐  │
+│  │                                  │  │
+│  └──────────────────────────────────┘  │
+│                                        │
+│  Teléfono                              │
+│  ┌──────────────────────────────────┐  │
+│  │                                  │  │
+│  └──────────────────────────────────┘  │
+│                                        │
+│  Tipo de negocio                       │
+│  ┌──────────────────────────────────┐  │
+│  │ Seleccioná una opción        ▼  │  │
+│  └──────────────────────────────────┘  │
+│                                        │
+│  Mensaje *                             │
+│  ┌──────────────────────────────────┐  │
+│  │                                  │  │
+│  │                                  │  │
+│  │                                  │  │
+│  └──────────────────────────────────┘  │
+│                                        │
+│  [████████ ENVIAR MENSAJE ████████]    │
+│                                        │
+│  Al enviar aceptás nuestra política    │
+│  de privacidad                         │
+│                                        │
+└────────────────────────────────────────┘
+
+
+================================================================================
+                     PÁGINA 8: DEMO / AGENDAR LLAMADA
+================================================================================
+
+URL: /demo
+
+HERO:
+TÍTULO: "Agendá tu demo personalizada"
+SUBTÍTULO: "15 minutos que pueden transformar tu negocio"
+
+CONTENIDO:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                                                                            │
+│  ¿QUÉ VAS A VER EN LA DEMO?                                                │
+│                                                                            │
+│  ✓ Demostración en vivo del bot para tu industria                          │
+│  ✓ Análisis de tus necesidades específicas                                 │
+│  ✓ Propuesta personalizada                                                 │
+│  ✓ Respuestas a todas tus preguntas                                        │
+│  ✓ Sin compromiso                                                          │
+│                                                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│                                                                            │
+│                      [CALENDLY EMBED]                                      │
+│                                                                            │
+│                    Seleccioná fecha y hora                                 │
+│                    que te quede cómodo                                     │
+│                                                                            │
+│  ────────────────────────────────────────────────────────────────────────  │
+│                                                                            │
+│  💬 ¿Preferís escribirnos primero?                                         │
+│  [Ir a WhatsApp]                                                           │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+                         ELEMENTOS FLOTANTES / GLOBALES
+================================================================================
+
+1. BOTÓN WHATSAPP FLOTANTE:
+- Esquina inferior derecha
+- Icono WhatsApp verde
+- Pulse animation
+- Tooltip: "¿Dudas? Escribinos"
+- Abre chat de WhatsApp directo
+
+2. CURSOR PERSONALIZADO:
+- Círculo pequeño cyan
+- Trail effect sutil
+- Agranda sobre elementos clickeables
+
+3. SCROLL PROGRESS BAR:
+- Línea cyan en top
+- Muestra progreso de scroll
+
+4. LOADER DE PÁGINA:
+- Logo ASSEL.AI animado
+- Fade out al cargar
+
+5. TOAST NOTIFICATIONS:
+- Para feedback de formularios
+- Estilo minimalista oscuro
+
+
+================================================================================
+                              ANIMACIONES GLOBALES
+================================================================================
+
+1. FADE IN UP:
+- Para secciones al hacer scroll
+- Delay staggered para elementos múltiples
+
+2. REVEAL:
+- Texto que se revela de izquierda a derecha
+- Para títulos principales
+
+3. COUNTER:
+- Números que suben desde 0
+- Para estadísticas
+
+4. HOVER EFFECTS:
+- Scale + glow en botones
+- Border gradient en cards
+- Underline animado en links
+
+5. PARALLAX:
+- Sutil en backgrounds
+- En hero sections
+
+6. TYPING EFFECT:
+- Para el título del hero
+- Para el demo del chat
+
+
+================================================================================
+                               RESPONSIVE DESIGN
+================================================================================
+
+BREAKPOINTS:
+- Desktop: 1440px+
+- Laptop: 1024px - 1439px
+- Tablet: 768px - 1023px
+- Mobile: 320px - 767px
+
+ADAPTACIONES MOBILE:
+- Menú hamburguesa
+- Cards apiladas
+- Hero simplificado
+- Demo chat full width
+- Pricing cards scroll horizontal
+- Footer colapsado
+- CTA flotante más grande
+
+
+================================================================================
+                               SEO & META
+================================================================================
+
+TITLE: ASSEL.AI | Agencia de Automatizaciones con IA para Negocios
+
+META DESCRIPTION:
+Automatizamos tu negocio con asistentes virtuales de IA. Chatbots para 
+restaurantes, inmobiliarias, clínicas y e-commerce. Reservas, atención 
+24/7 y más. Consultá gratis.
+
+KEYWORDS:
+automatización, chatbot, asistente virtual, IA, inteligencia artificial,
+WhatsApp business, reservas automáticas, atención al cliente 24/7,
+bot para restaurantes, bot inmobiliaria, chatbot clínica, argentina
+
+OG IMAGE:
+Diseño con logo, tagline y preview del chat demo
+
+SCHEMA MARKUP:
+- Organization
+- LocalBusiness
+- Service
+- FAQ
+
+
+================================================================================
+                          INTEGRACIONES TÉCNICAS
+================================================================================
+
+1. ANALYTICS:
+- Google Analytics 4
+- Hotjar (heatmaps)
+- Microsoft Clarity
+
+2. CHAT/DEMO:
+- Webhook N8N para demo funcional
+- OpenAI API para respuestas
+
+3. FORMULARIOS:
+- Envío a Supabase
+- Notificación por email
+- Webhook a CRM
+
+4. CALENDLY:
+- Embed para agendar demos
+
+5. WHATSAPP:
+- Link directo a chat
+- Pre-mensaje configurado
+
+
+================================================================================
+                              NOTAS FINALES
+================================================================================
+
+PRIORIDADES DE DESARROLLO:
+
+1. MUST HAVE (MVP):
+   - Home completo
+   - Demo interactiva funcionando
+   - Página de contacto
+   - Formulario que funcione
+   - WhatsApp flotante
+   - Mobile responsive
+
+2. SHOULD HAVE:
+   - Páginas de servicios detalladas
+   - Precios
+   - Blog básico
+   - Casos de éxito
+
+3. NICE TO HAVE:
+   - Animaciones avanzadas
+   - Cursor personalizado
+   - Parallax effects
+   - Blog completo
+
+STACK RECOMENDADO:
+- React + Vite
+- Tailwind CSS
+- Framer Motion (animaciones)
+- Supabase (backend)
+- Vercel (hosting)
+
+================================================================================
+                              FIN DEL DOCUMENTO
+================================================================================
+
+Creado para: Alan Assel
+Agencia: ASSEL.AI
+Fecha: Diciembre 2024
+
+Este documento contiene la especificación completa de diseño y contenido
+para la web de la agencia de automatizaciones. Usar como referencia para
+el desarrollo y como prompt para generación de código.
+
+================================================================================
