@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Check, Zap, Phone, Settings, Rocket, Plus, Minus, Sparkles, Factory, Scale, Truck, GraduationCap, Briefcase, Users, Calendar, Image as ImageIcon, BarChart3, Clock, Brain, FileText, Sliders, Puzzle } from 'lucide-react';
+import { ArrowRight, Check, Zap, Phone, Settings, Rocket, Plus, Minus, Sparkles, Factory, Scale, Truck, GraduationCap, Briefcase, Users, Calendar, Image as ImageIcon, BarChart3, Clock, Brain, FileText, Sliders, Puzzle, Filter, CalendarClock, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import { Service, Testimonial } from '../types';
@@ -20,6 +20,7 @@ import ClinicaAgenda from '@/assets/clinica/agenda.png';
 import EcomHome from '@/assets/ecom/home.png';
 import EcomProductos from '@/assets/ecom/productos.png';
 import InmoCampanas from '@/assets/inmo/campañas.png';
+import VeranoImg from '@/assets/verano.jpg';
 
 const SERVICES: Service[] = [
     {
@@ -294,10 +295,10 @@ export const Home: React.FC = () => {
                                 hidden: { opacity: 0, y: 20 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight mb-8 tracking-tight"
+                            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 tracking-tight"
                         >
                             LA PLATAFORMA QUE<br />
-                            <Typewriter words={['AGILIZA', 'CENTRALIZA', 'POTENCIA', 'ESCALA']} /> TU NEGOCIO
+                            <Typewriter words={['ESCALA', 'ORDENA', 'CENTRALIZA', 'AUTOMATIZA', 'OPTIMIZA', 'PROFESIONALIZA']} /> TU NEGOCIO
                         </motion.h1>
 
                         {/* Subtitle */}
@@ -308,7 +309,7 @@ export const Home: React.FC = () => {
                             }}
                             className="text-lg md:text-xl text-brand-gray mb-10 max-w-2xl mx-auto leading-relaxed"
                         >
-                            Verza atiende, reserva, vende y fideliza clientes mientras vos dormís. Sin código. Implementación en 48hs.
+                            Automatiza WhatsApp, ordena la atención y convierte consultas en ventas con un sistema adaptado a tu industria. Implementación real en 48hs.
                         </motion.p>
 
                         {/* CTAs */}
@@ -317,21 +318,15 @@ export const Home: React.FC = () => {
                                 hidden: { opacity: 0, y: 20 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                             }}
-                            className="flex flex-col sm:flex-row gap-4 mb-20"
+                            className="flex flex-col sm:flex-row gap-4 mb-20 justify-center"
                         >
-                            <Link
-                                to="/contacto"
-                                className="px-8 py-4 rounded-lg bg-brand-cyan text-brand-black font-bold text-lg hover:shadow-[0_0_20px_rgba(0,245,255,0.4)] transition-all text-center min-w-[200px] hover:scale-105"
-                            >
-                                Agendar Demo Gratis
-                            </Link>
                             <Link
                                 to="#como-funciona"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     document.getElementById('como-funciona')?.scrollIntoView({ behavior: 'smooth' });
                                 }}
-                                className="px-8 py-4 rounded-lg bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all flex items-center justify-center gap-2 min-w-[200px]"
+                                className="px-8 py-4 rounded-lg bg-brand-cyan text-brand-black font-bold text-lg hover:shadow-[0_0_20px_rgba(0,245,255,0.4)] transition-all flex items-center justify-center gap-2 min-w-[200px] hover:scale-105"
                             >
                                 Ver Cómo Funciona
                             </Link>
@@ -351,10 +346,14 @@ export const Home: React.FC = () => {
                 <div className="relative w-full overflow-hidden mask-gradient-x">
                     <div className="flex animate-scroll whitespace-nowrap">
                         {[...TECHNOLOGIES, ...TECHNOLOGIES, ...TECHNOLOGIES].map((tech, index) => (
-                            <div key={index} className="mx-8 text-2xl font-display font-bold text-white/20 hover:text-brand-cyan transition-colors cursor-default">
+                            <motion.div
+                                key={index}
+                                whileHover={{ scale: 1.1, color: '#00F5FF' }}
+                                className="mx-8 text-2xl font-display font-bold text-white/20 transition-colors cursor-default"
+                            >
                                 {tech}
-                            </div>
-                        ))}
+                            </motion.div>
+                        ))}]
                     </div>
                 </div>
             </section>
@@ -362,7 +361,7 @@ export const Home: React.FC = () => {
 
 
             {/* Versa Detailed Features (ZigZag) */}
-            <section className="py-24 bg-brand-black border-t border-white/5 relative overflow-hidden">
+            <section className="py-16 bg-brand-black border-t border-white/5 relative overflow-hidden">
                 <div className="container mx-auto px-6 relative z-10">
 
                     {/* Feature 1: Intro / Video */}
@@ -404,10 +403,25 @@ export const Home: React.FC = () => {
                             <div className="inline-block px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm font-bold uppercase tracking-wider mb-6 border border-blue-500/20">
                                 <span className="flex items-center gap-2"><Zap size={16} /> VIDEO DEMO</span>
                             </div>
-                            <h3 className="text-4xl font-display font-bold mb-6">¿Qué es Verza?</h3>
-                            <p className="text-brand-gray text-lg leading-relaxed mb-6">
-                                Verza no es solo un chatbot; es una plataforma de <strong>Marketing Conversacional</strong> diseñada para convertir. Transformamos tus canales de atención en máquinas automáticas de ventas y reservas, manteniendo siempre un trato cálido y humano que fideliza a tus clientes.
-                            </p>
+                            <h3 className="text-3xl md:text-4xl font-display font-bold mb-4">¿Qué es Verza?</h3>
+
+                            <div className="space-y-3 text-base leading-relaxed text-brand-gray">
+                                <p className="text-lg text-white font-medium">
+                                    Verza es una plataforma que convierte <span className="font-bold">WhatsApp</span> en un <span className="text-brand-cyan font-bold">sistema operativo</span> para tu negocio.
+                                </p>
+                                <p>
+                                    <span className="text-white font-medium">Automatiza la atención</span>, ejecuta acciones reales (agendar, calificar, vender) y ordena tus conversaciones en una sola central inteligente.
+                                </p>
+                                <p>
+                                    <span className="italic opacity-80">No responde mensajes “porque sí”:</span> <br />
+                                    trabaja con <strong className="text-white font-bold bg-white/5 px-1 rounded mx-1">lógica de negocio</strong>, prioriza oportunidades y deja a tu equipo solo lo importante.
+                                </p>
+                                <div className="pt-1">
+                                    <p className="text-sm border-l-2 border-brand-cyan pl-3 py-1 text-brand-gray/90 bg-gradient-to-r from-brand-cyan/5 to-transparent rounded-r-lg">
+                                        Funciona <strong>24/7</strong>, se integra con tus herramientas y se implementa en <span className="text-brand-cyan font-bold">48 horas</span>, sin código.
+                                    </p>
+                                </div>
+                            </div>
                         </motion.div>
                     </div>
 
@@ -487,27 +501,41 @@ export const Home: React.FC = () => {
                                 <span className="text-brand-cyan">una sola pantalla</span>
                             </h3>
 
-                            <p className="text-brand-gray text-lg leading-relaxed mb-10">
-                                Olvidate de las pestañas infinitas. Verza fusiona WhatsApp, Instagram y Web en una <strong>central de mando inteligente</strong>. Visualizá todas las conversaciones en tiempo real y asigná tareas automáticamente.
-                            </p>
+                            <div className="space-y-4 mb-10 text-brand-gray text-lg leading-relaxed">
+                                <p>
+                                    <strong className="text-white">Olvidate del caos de chats y pestañas abiertas.</strong><br />
+                                    Verza centraliza WhatsApp, Instagram y Web en una única bandeja inteligente, donde ves todas las conversaciones en tiempo real, priorizás oportunidades y el sistema ejecuta acciones automáticamente.
+                                </p>
+                                <p className="text-white font-medium border-l-2 border-brand-cyan pl-3">
+                                    Tu equipo trabaja ordenado. Vos tenés control.
+                                </p>
+                            </div>
 
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className="bg-white/5 border border-white/5 p-4 rounded-xl hover:bg-white/10 transition-colors group">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                                <div className="bg-white/5 border border-white/5 p-5 rounded-xl hover:bg-white/10 transition-colors group">
                                     <div className="w-10 h-10 rounded-lg bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-3 group-hover:scale-110 transition-transform">
                                         <Users size={20} />
                                     </div>
-                                    <h4 className="font-bold text-white mb-1">Inbox Colaborativo</h4>
-                                    <p className="text-sm text-brand-gray">Múltiples agentes respondiendo al mismo tiempo.</p>
+                                    <h4 className="font-bold text-white mb-2">Inbox Colaborativo</h4>
+                                    <p className="text-sm text-brand-gray leading-relaxed">
+                                        Todos los mensajes en un solo lugar. Múltiples agentes pueden responder, derivar o continuar conversaciones sin pisarse ni perder contexto.
+                                    </p>
                                 </div>
 
-                                <div className="bg-white/5 border border-white/5 p-4 rounded-xl hover:bg-white/10 transition-colors group">
+                                <div className="bg-white/5 border border-white/5 p-5 rounded-xl hover:bg-white/10 transition-colors group">
                                     <div className="w-10 h-10 rounded-lg bg-brand-violet/10 flex items-center justify-center text-brand-violet mb-3 group-hover:scale-110 transition-transform">
                                         <Brain size={20} />
                                     </div>
-                                    <h4 className="font-bold text-white mb-1">IA + Humanos</h4>
-                                    <p className="text-sm text-brand-gray">La IA responde lo simple, vos cerrás lo importante.</p>
+                                    <h4 className="font-bold text-white mb-2">IA + Humanos</h4>
+                                    <p className="text-sm text-brand-gray leading-relaxed">
+                                        La IA se encarga de lo repetitivo y simple. Tu equipo interviene solo cuando hace falta criterio humano o cierre comercial.
+                                    </p>
                                 </div>
                             </div>
+
+                            <p className="text-xs text-brand-gray/60 font-medium tracking-wide uppercase text-center sm:text-left">
+                                Menos fricción operativa · Más velocidad · Mejor experiencia
+                            </p>
                         </motion.div>
                     </div>
 
@@ -579,17 +607,37 @@ export const Home: React.FC = () => {
 
                             <h3 className="text-4xl font-display font-bold mb-6">Control total, <br /><span className="text-brand-cyan">en tiempo real</span></h3>
 
-                            <p className="text-brand-gray text-lg leading-relaxed mb-10">
-                                Ganale a la incertidumbre. Visualizá cada conversación activa, detectá cuellos de botella y auditá el rendimiento de tu equipo comercial al instante. Con Verza, las decisiones se toman con datos.
-                            </p>
+                            <div className="space-y-6 mb-8 text-lg text-brand-gray leading-relaxed">
+                                <p>
+                                    <strong className="text-white">Dejá de adivinar qué está pasando.</strong><br />
+                                    Con Verza ves cada conversación activa, medís el rendimiento de tu equipo y detectás cuellos de botella en el momento exacto en que ocurren.
+                                </p>
+                                <p className="text-white/80 border-l-2 border-brand-violet pl-3 italic">
+                                    Todo queda registrado, medido y auditable.
+                                </p>
 
-                            <Link
-                                to="/contacto"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-cyan text-brand-black font-bold text-lg rounded-xl hover:shadow-[0_0_20px_rgba(0,245,255,0.4)] hover:scale-105 transition-all duration-300"
-                            >
-                                Agendar Demo Gratis
-                                <ArrowRight size={20} />
-                            </Link>
+                                <div className="bg-white/5 rounded-xl p-5 border border-white/5">
+                                    <p className="text-sm font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+                                        <BarChart3 size={16} className="text-brand-violet" /> Desde una sola pantalla podés saber:
+                                    </p>
+                                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base">
+                                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-violet shadow-[0_0_5px_rgba(139,92,246,0.5)]"></div> qué conversaciones convierten</li>
+                                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-violet shadow-[0_0_5px_rgba(139,92,246,0.5)]"></div> dónde se pierden oportunidades</li>
+                                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-violet shadow-[0_0_5px_rgba(139,92,246,0.5)]"></div> qué agentes necesitan ajuste</li>
+                                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-brand-violet shadow-[0_0_5px_rgba(139,92,246,0.5)]"></div> qué automatizaciones funcionan</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-4 items-start">
+                                <Link
+                                    to="/servicios"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-brand-cyan text-brand-black font-bold text-lg rounded-xl hover:shadow-[0_0_20px_rgba(0,245,255,0.4)] hover:scale-105 transition-all duration-300"
+                                >
+                                    Obtener más info
+                                    <ArrowRight size={20} />
+                                </Link>
+                            </div>
 
                         </motion.div>
                     </div>
@@ -598,7 +646,7 @@ export const Home: React.FC = () => {
             </section>
 
             {/* Marketing Campaigns Section */}
-            <section id="campanas" className="py-24 bg-brand-dark relative overflow-hidden">
+            <section id="campanas" className="py-16 bg-brand-dark relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-20">
@@ -616,14 +664,14 @@ export const Home: React.FC = () => {
                             viewport={{ once: true }}
                             className="text-4xl md:text-5xl font-display font-bold mb-6"
                         >
-                            <span className="text-brand-cyan">Campañas Masivas</span> que convierten
+                            <span className="text-brand-cyan">Campañas por WhatsApp</span> que convierten
                         </motion.h2>
-                        <p className="text-xl text-brand-gray max-w-2xl mx-auto">
-                            Llegá directo al bolsillo de tus clientes. Comunicá promociones, novedades y publicidad con una tasa de apertura del 98%.
+                        <p className="text-lg text-brand-gray max-w-3xl mx-auto leading-relaxed">
+                            Comunicación directa, relevante y medible. Promociones, novedades y mensajes automatizados enviados solo al público correcto, con tasas de apertura muy superiores a cualquier otro canal.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-12">
                         {/* Campaign Feature 1: Multimedia & Massive */}
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
@@ -638,16 +686,19 @@ export const Home: React.FC = () => {
                                 <div className="p-3 bg-brand-cyan/10 rounded-xl w-fit mb-6 text-brand-cyan">
                                     <ImageIcon size={32} />
                                 </div>
-                                <h3 className="text-2xl font-bold mb-4 text-white">Impacto Visual Inmediato</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-white">Impacto visual inmediato</h3>
                                 <p className="text-brand-gray leading-relaxed mb-6">
-                                    No envíes solo texto aburrido. Con Verza podés adjuntar <strong>imágenes promocionales, flyers o catálogos</strong> a tus difusiones. Ideal para lanzamientos de productos, menús especiales o liquidaciones.
+                                    No envíes solo texto genérico. Con Verza podés crear mensajes visuales con imágenes, catálogos o PDFs, ideales para lanzamientos, promociones y campañas estacionales.
                                 </p>
                                 <ul className="space-y-3">
                                     <li className="flex items-center gap-3 text-sm text-brand-gray/80">
-                                        <Check className="text-green-400" size={16} /> Envío de imágenes y PDFs
+                                        <Check className="text-green-400" size={16} /> Envío de imágenes, catálogos y PDFs
                                     </li>
                                     <li className="flex items-center gap-3 text-sm text-brand-gray/80">
-                                        <Check className="text-green-400" size={16} /> Botones de acción (Call-to-Action)
+                                        <Check className="text-green-400" size={16} /> Botones de acción (Call-to-Action) medibles
+                                    </li>
+                                    <li className="flex items-center gap-3 text-sm text-brand-gray/80">
+                                        <Check className="text-green-400" size={16} /> Mensajes personalizados por cliente
                                     </li>
                                 </ul>
                             </div>
@@ -658,8 +709,12 @@ export const Home: React.FC = () => {
                                     <div className="w-8 h-8 rounded-full bg-brand-cyan"></div>
                                     <div className="flex-1 space-y-2">
                                         <div className="bg-[#2a2a35] rounded-lg rounded-tl-none p-3 text-sm text-white/90">
-                                            <div className="w-full h-32 bg-brand-dark rounded-md mb-2 overflow-hidden relative">
-                                                <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/20 to-transparent"></div>
+                                            <div className="w-full h-32 rounded-md mb-2 overflow-hidden relative group-hover:scale-105 transition-transform duration-500">
+                                                <img
+                                                    src={VeranoImg}
+                                                    alt="Promo Verano"
+                                                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                                                />
                                                 <div className="absolute bottom-2 left-2 px-2 py-1 bg-black/60 rounded text-[10px] text-white font-bold">50% OFF</div>
                                             </div>
                                             <p>¡Hola Ana! 👋 Llegó la nueva colección de verano. Aprovechá el descuento exclusivo para clientes VIP.</p>
@@ -683,52 +738,70 @@ export const Home: React.FC = () => {
                                 <div className="p-3 bg-brand-violet/10 rounded-xl w-fit mb-6 text-brand-violet">
                                     <Users size={32} />
                                 </div>
-                                <h3 className="text-2xl font-bold mb-4 text-white">Segmentación y Programación</h3>
+                                <h3 className="text-2xl font-bold mb-4 text-white">Segmentación y programación inteligente</h3>
                                 <p className="text-brand-gray leading-relaxed mb-6">
-                                    La clave es la relevancia. Filtrá tu base de datos por <strong>etiquetas (Vips, Nuevos, Deudores)</strong> y programá el envío para el momento exacto donde tu cliente está activo.
+                                    La diferencia no está en enviar más, sino en enviar mejor. Segmentá tu base por comportamiento, etiquetas o historial y programá el envío en el momento óptimo para cada grupo.
                                 </p>
                                 <ul className="space-y-3">
                                     <li className="flex items-center gap-3 text-sm text-brand-gray/80">
-                                        <Clock className="text-brand-violet" size={16} /> Programación de fecha y hora
+                                        <Filter className="text-brand-violet" size={16} /> Segmentación por etiquetas (VIP, nuevos, etc.)
                                     </li>
                                     <li className="flex items-center gap-3 text-sm text-brand-gray/80">
-                                        <Users className="text-brand-violet" size={16} /> Filtros por etiquetas y comportamiento
+                                        <CalendarClock className="text-brand-violet" size={16} /> Programación por fecha y horario
+                                    </li>
+                                    <li className="flex items-center gap-3 text-sm text-brand-gray/80">
+                                        <ShieldCheck className="text-brand-violet" size={16} /> Control total de envíos y destinatarios
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* Scheduler UI Mockup */}
-                            <div className="relative mt-auto">
-                                <img
-                                    src={InmoCampanas}
-                                    alt="Panel de Campañas"
-                                    className="rounded-xl border border-white/10 shadow-2xl w-full opacity-80 group-hover:opacity-100 transition-opacity"
-                                />
-                                <div className="absolute -bottom-4 -right-4 bg-brand-dark p-4 rounded-xl border border-white/10 shadow-xl flex items-center gap-4 animate-bounce hover:pause">
-                                    <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
-                                        <Rocket size={20} />
+                            {/* Mini Metrics Mockup */}
+                            <div className="relative bg-[#1A1A23] rounded-xl p-5 border border-white/5 shadow-2xl skew-y-2 transform translate-y-4 group-hover:translate-y-2 transition-transform">
+                                <div className="flex justify-between items-center mb-4 border-b border-white/5 pb-2">
+                                    <div><div className="h-2 w-20 bg-white/20 rounded"></div></div>
+                                    <div className="px-2 py-0.5 rounded bg-green-500/20 text-green-500 text-[10px]">Completado</div>
+                                </div>
+                                <div className="space-y-3">
+                                    <div className="flex justify-between text-xs text-brand-gray">
+                                        <span>Enviados</span>
+                                        <span className="text-white">1,240</span>
                                     </div>
-                                    <div>
-                                        <div className="text-xs text-brand-gray font-bold">Campaña Enviada</div>
-                                        <div className="text-white font-bold">1,240 Destinatarios</div>
+                                    <div className="w-full bg-white/5 rounded-full h-1.5">
+                                        <div className="bg-brand-violet w-[98%] h-full rounded-full"></div>
+                                    </div>
+                                    <div className="flex justify-between text-xs text-brand-gray">
+                                        <span>Leídos</span>
+                                        <span className="text-white">1,180 (95%)</span>
+                                    </div>
+                                    <div className="w-full bg-white/5 rounded-full h-1.5">
+                                        <div className="bg-brand-cyan w-[95%] h-full rounded-full"></div>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
                     </div>
+
+                    <p className="text-center text-brand-gray/60 text-sm font-medium border-t border-white/5 pt-8 w-full max-w-2xl mx-auto">
+                        Comunicación responsable, opt-in y alineada con políticas de WhatsApp.
+                    </p>
                 </div>
             </section>
 
             {/* Smart Bot Configuration Section */}
-            <section id="bots" className="py-24 bg-black relative border-y border-white/5">
+            <section id="bots" className="py-16 bg-black relative border-y border-white/5">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
                         <div className="inline-block px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-bold text-sm tracking-wider mb-6">
                             <span className="flex items-center gap-2"><Brain size={16} /> CEREBRO ENTRENADO</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-4xl md:text-5xl font-display font-bold mb-6"
+                        >
                             Un cerebro entrenado <br className="hidden md:block" /> a la medida de tu negocio
-                        </h2>
+                        </motion.h2>
                         <p className="text-xl text-brand-gray max-w-2xl mx-auto">
                             Verza no es un bot genérico. Lo configurás con tu información, tus reglas y las acciones específicas que necesitás que realice.
                         </p>
@@ -736,7 +809,13 @@ export const Home: React.FC = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Knowledge Base */}
-                        <div className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-brand-violet/50 transition-colors group relative overflow-hidden">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-brand-violet/50 transition-colors group relative overflow-hidden"
+                        >
                             <div className="absolute inset-0 bg-gradient-to-b from-brand-violet/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                             <div className="w-14 h-14 rounded-2xl bg-brand-violet/10 flex items-center justify-center text-brand-violet mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -754,10 +833,16 @@ export const Home: React.FC = () => {
                                     <FileText size={14} className="text-brand-cyan" /> politicas_de_envio.pdf
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Rules & Logic */}
-                        <div className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-brand-cyan/50 transition-colors group relative overflow-hidden">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-brand-cyan/50 transition-colors group relative overflow-hidden"
+                        >
                             <div className="absolute inset-0 bg-gradient-to-b from-brand-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                             <div className="w-14 h-14 rounded-2xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -781,10 +866,16 @@ export const Home: React.FC = () => {
                                     Priorizar productos en stock
                                 </li>
                             </ul>
-                        </div>
+                        </motion.div>
 
                         {/* Actions & Tools */}
-                        <div className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-white/30 transition-colors group relative overflow-hidden">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.3 }}
+                            className="bg-brand-dark border border-white/5 rounded-3xl p-8 hover:border-white/30 transition-colors group relative overflow-hidden"
+                        >
                             <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -799,7 +890,7 @@ export const Home: React.FC = () => {
                                 <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-mono text-brand-cyan">consultar_stock()</span>
                                 <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-xs font-mono text-brand-cyan">enviar_catalogo()</span>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
@@ -811,14 +902,14 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-24 bg-brand-dark relative"
+                className="py-16 bg-brand-dark relative"
             >
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
                         <div className="inline-block px-4 py-2 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-bold text-sm tracking-wider mb-6">
                             <span className="flex items-center gap-2"><Briefcase size={16} /> SOLUCIONES POR INDUSTRIA</span>
                         </div>
-                        <h2 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight relative z-10">
+                        <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight relative z-10">
                             Verza se adapta <br className="hidden md:block" /> a <span className="text-brand-cyan">tu industria</span>
                         </h2>
                         <p className="text-xl text-brand-gray max-w-2xl mx-auto leading-relaxed">
@@ -889,7 +980,7 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-24 bg-brand-black relative"
+                className="py-16 bg-brand-black relative"
             >
                 <div className="container mx-auto px-6">
                     <div className="relative rounded-3xl overflow-hidden border border-brand-cyan/30 bg-gradient-to-br from-brand-dark to-brand-black p-8 md:p-12 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
@@ -908,11 +999,15 @@ export const Home: React.FC = () => {
                             {/* Grid of Industries */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
                                 {CUSTOM_SOLUTIONS_EXAMPLES.map((item, i) => (
-                                    <div key={i} className="bg-white/5 border border-white/5 p-6 rounded-xl hover:bg-white/10 transition-colors group">
+                                    <motion.div
+                                        key={i}
+                                        whileHover={{ y: -5 }}
+                                        className="bg-white/5 border border-white/5 p-6 rounded-xl hover:bg-white/10 transition-colors group cursor-default"
+                                    >
                                         <item.icon className="text-brand-cyan mb-3 group-hover:scale-110 transition-transform" size={28} />
                                         <h3 className="font-bold mb-1 text-white">{item.title}</h3>
                                         <p className="text-sm text-brand-gray">{item.desc}</p>
-                                    </div>
+                                    </motion.div>
                                 ))}
                             </div>
 
@@ -947,7 +1042,7 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-24 bg-brand-dark border-y border-white/5"
+                className="py-16 bg-brand-dark border-y border-white/5"
             >
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
@@ -960,7 +1055,14 @@ export const Home: React.FC = () => {
                         <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-brand-cyan/20 via-brand-cyan to-brand-cyan/20 z-0"></div>
 
                         {STEPS.map((step, idx) => (
-                            <div key={idx} className="relative z-10 flex flex-col items-center text-center group">
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.2 }}
+                                className="relative z-10 flex flex-col items-center text-center group"
+                            >
                                 <div className="w-24 h-24 rounded-2xl bg-brand-dark border border-brand-cyan/30 flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(0,245,255,0.1)] group-hover:shadow-[0_0_40px_rgba(0,245,255,0.3)] transition-all duration-300 group-hover:-translate-y-2">
                                     <step.icon size={40} className="text-brand-cyan" />
                                 </div>
@@ -973,7 +1075,7 @@ export const Home: React.FC = () => {
                                     <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
                                     {step.time}
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
@@ -987,7 +1089,7 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-24 bg-brand-black"
+                className="py-16 bg-brand-black"
             >
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-display font-bold text-center mb-16">Lo que dicen nuestros clientes</h2>
@@ -1023,7 +1125,7 @@ export const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="py-24 bg-brand-dark"
+                className="py-16 bg-brand-dark"
             >
                 <div className="container mx-auto px-6 max-w-3xl">
                     <div className="text-center mb-16">
@@ -1040,7 +1142,7 @@ export const Home: React.FC = () => {
             </motion.section>
 
             {/* CTA Final */}
-            <section className="py-32 relative overflow-hidden">
+            <section className="py-24 relative overflow-hidden">
                 <div className="absolute inset-0 bg-hero-gradient opacity-10"></div>
                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
                 <motion.div
