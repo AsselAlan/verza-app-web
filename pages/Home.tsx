@@ -211,7 +211,7 @@ export const Home: React.FC = () => {
     return (
         <>
             {/* Hero Section */}
-            <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-48 pb-20">
+            <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 md:pt-48 pb-20">
                 {/* Abstract BacFverkground */}
                 <div className="absolute inset-0 bg-[#0A0A0F]">
                     <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(0,102,255,0.1),transparent_50%)]"></div>
@@ -294,7 +294,7 @@ export const Home: React.FC = () => {
                                 hidden: { opacity: 0, y: 20 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight mb-8 tracking-tight"
+                            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight mb-8 tracking-tight"
                         >
                             LA PLATAFORMA QUE<br />
                             <Typewriter words={['AGILIZA', 'CENTRALIZA', 'POTENCIA', 'ESCALA']} /> TU NEGOCIO

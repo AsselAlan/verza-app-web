@@ -1,0 +1,58 @@
+================================================================================
+                                CONTEXTO VERZA
+================================================================================
+
+1. ¿QUÉ ES VERZA?
+--------------------------------------------------------------------------------
+Verza es una agencia de automatización especializada en la implementación de 
+asistentes virtuales potenciados por Inteligencia Artificial. Su objetivo principal 
+es ayudar a los negocios a operar de manera más eficiente, permitiendo que la IA 
+se encargue de la atención al cliente, ventas y gestión operativa, mientras los 
+dueños se enfocan en el crecimiento estratégico.
+
+"Automatizamos tu negocio mientras tú te enfocas en crecer."
+
+2. PROPUESTA DE VALOR
+--------------------------------------------------------------------------------
+La plataforma ofrece soluciones que funcionan 24/7, garantizando que ninguna 
+consulta quede sin responder y ninguna oportunidad de venta se pierda.
+- Respuesta inmediata a clientes.
+- Integración fluida con canales como WhatsApp.
+- Dashboards en tiempo real para monitorear el rendimiento.
+- Soluciones personalizadas para diferentes industrias.
+
+3. SERVICIOS Y VERTICALES
+--------------------------------------------------------------------------------
+Verza se especializa en asistentes virtuales entrenados para industrias específicas:
+
+A. Restaurantes (Gastronomía)
+   - Funciones: Toma de reservas automática, visualización de menú interactivo, 
+     gestión de horarios, respuestas a preguntas frecuentes.
+   - Beneficio: Reduce la carga operativa y asegura mesas llenas.
+
+B. Inmobiliarias (Real Estate)
+   - Funciones: Calificación de leads (inquilinos/compradores), agendamiento 
+     automático de visitas, información sobre propiedades 24/7.
+   - Beneficio: Filtra curiosos de clientes reales y agiliza el proceso de venta/alquiler.
+
+C. Clínicas y Consultorios (Salud)
+   - Funciones: Gestión de turnos y citas, recordatorios automáticos para reducir 
+     ausentismo (no-shows), triaje básico y respuestas a consultas administrativas.
+   - Beneficio: Optimiza la agenda médica y mejora la experiencia del paciente.
+
+D. E-commerce
+   - Funciones: Asesoramiento en compras, recuperación de carritos abandonados, 
+     seguimiento de pedidos y soporte post-venta.
+   - Beneficio: Aumenta la tasa de conversión y fideliza clientes.
+
+4. IDENTIDAD DE MARCA Y WEB
+--------------------------------------------------------------------------------
+La web de Verza refleja una identidad:
+- Futurista y Tecnológica: Uso de colores oscuros, neones (cyan, violeta), 
+  y efectos de vidrio (glassmorphism).
+- Profesional y Confiable: Diseño limpio, tipografía moderna (Inter, Space Grotesk).
+- Dinámica: Animaciones suaves, interactividad en la demo de chat y experiencia 
+  de usuario fluida.
+
+La plataforma web no solo es una landing page, sino una herramienta de conversión 
+que demuestra la capacidad de la IA en tiempo real a través de demos interactivas.

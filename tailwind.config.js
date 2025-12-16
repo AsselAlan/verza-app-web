@@ -30,6 +30,7 @@ export default {
                 'scroll': 'scroll 40s linear infinite',
                 'grid-move': 'grid-move 20s linear infinite',
                 'float': 'float 6s ease-in-out infinite',
+                'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             },
             keyframes: {
                 blob: {
@@ -49,10 +50,16 @@ export default {
                 float: {
                     '0%, 100%': { transform: 'translateY(0)' },
                     '50%': { transform: 'translateY(-20px)' },
-                }
+                },
+                'pulse-glow': {
+                    '0%, 100%': { opacity: 1, boxShadow: '0 0 20px rgba(0, 245, 255, 0.5)' },
+                    '50%': { opacity: .7, boxShadow: '0 0 10px rgba(0, 245, 255, 0.2)' },
+                },
             },
             backgroundImage: {
                 'hero-gradient': 'linear-gradient(135deg, #0066FF 0%, #00F5FF 50%, #8B5CF6 100%)',
+                'text-gradient': 'linear-gradient(90deg, #00F5FF, #8B5CF6)',
+                'card-glow': 'radial-gradient(circle at center, rgba(0,245,255,0.08) 0%, transparent 70%)',
             }
         },
     },
